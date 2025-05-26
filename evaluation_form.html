@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Evaluation Form</title>
+    <title>New Evaluation Entry</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -41,31 +41,40 @@
             margin: 0 auto;
             width: 150px;
         }
-        table {
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        .form-group input, .form-group textarea {
             width: 100%;
-            border-collapse: collapse;
-            margin-top: 1rem;
-        }
-        table, th, td {
-            border: 1px solid #ddd;
-        }
-        th, td {
             padding: 0.5rem;
-            text-align: left;
+            border: 1px solid #ccc;
+            border-radius: 4px;
         }
-        th {
+        .form-group button {
             background-color: #00008b;
             color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
         }
-        .actions button {
-            margin-right: 0.5rem;
+        .form-group button:hover {
+            background-color: #0000cd;
+        }
+        .confirmation {
+            margin-top: 1rem;
+            color: green;
         }
     </style>
 </head>
 <body>
     <header>
         <img src="logo2.jpg" alt="HPCSA Logo" class="logo">
-        <h1>Evaluation Form</h1>
+        <h1>New Evaluation Entry</h1>
     </header>
     <nav>
         <a href="intern_dashboard.html">Intern Dashboard</a>
@@ -77,7 +86,34 @@
         <a href="admin_panel.html">Admin Panel</a>
     </nav>
     <div class="container">
-        <h2>Evaluation Form</h2><p>Content for the evaluation form goes here.</p>
+        <form id="evaluationForm">
+            <div class="form-group">
+                <label for="internName">Intern Name:</label>
+                <input type="text" id="internName" name="internName" required>
+            </div>
+            <div class="form-group">
+                <label for="domain">Domain:</label>
+                <input type="text" id="domain" name="domain" required>
+            </div>
+            <div class="form-group">
+                <label for="evaluationScore">Evaluation Score:</label>
+                <input type="number" id="evaluationScore" name="evaluationScore" required>
+            </div>
+            <div class="form-group">
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="button" onclick="submitEvaluation()">Save</button>
+            </div>
+            <div id="confirmationMessage" class="confirmation"></div>
+        </form>
     </div>
+    <script>
+        function submitEvaluation() {
+            // Simulate saving the data
+            document.getElementById('confirmationMessage').innerText = 'Evaluation submitted successfully!';
+        }
+    </script>
 </body>
 </html>
