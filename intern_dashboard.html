@@ -13,7 +13,7 @@
             background-color: #f4f4f4;
         }
         header {
-            background-color: #4CAF50;
+            background-color: #00008b;
             color: white;
             padding: 1rem;
             text-align: center;
@@ -21,7 +21,7 @@
         nav {
             display: flex;
             justify-content: center;
-            background-color: #333;
+            background-color: #0000cd;
         }
         nav a {
             color: white;
@@ -44,36 +44,28 @@
         table {
             width: 100%;
             border-collapse: collapse;
-            margin-top: 2rem;
+            margin-top: 1rem;
         }
         table, th, td {
             border: 1px solid #ddd;
         }
         th, td {
-            padding: 1rem;
+            padding: 0.5rem;
             text-align: left;
         }
         th {
-            background-color: #4CAF50;
+            background-color: #00008b;
             color: white;
         }
         .actions button {
-            padding: 0.5rem 1rem;
             margin-right: 0.5rem;
-            border: none;
-            background-color: #4CAF50;
-            color: white;
-            cursor: pointer;
-        }
-        .actions button:hover {
-            background-color: #45a049;
         }
     </style>
 </head>
 <body>
     <header>
         <img src="logo2.jpg" alt="HPCSA Logo" class="logo">
-        <h1>Electronic Medical Intern E-Logbook</h1>
+        <h1>Intern Dashboard</h1>
     </header>
     <nav>
         <a href="intern_dashboard.html">Intern Dashboard</a>
@@ -85,72 +77,67 @@
         <a href="admin_panel.html">Admin Panel</a>
     </nav>
     <div class="container">
-        <h2>Welcome to the Electronic Medical Intern E-Logbook System</h2>
-        <p>Select a section from the navigation bar to get started.</p>
         
-        <h3>My Submissions</h3>
+        <h2>My Submissions</h2>
         <table>
-            <thead>
-                <tr>
-                    <th>Submission Title</th>
-                    <th>Date Submitted</th>
-                    <th>Status</th>
-                    <th>Actions</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>General Medicine Rotation Log</td>
-                    <td>2023-04-01</td>
-                    <td>Pending</td>
-                    <td class="actions">
-                        <button>View</button>
-                        <button>Edit</button>
-                        <button>Delete</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Form 139 - Paediatrics Evaluation</td>
-                    <td>2023-04-15</td>
-                    <td>Approved</td>
-                    <td class="actions">
-                        <button>View</button>
-                        <button>Edit</button>
-                        <button>Delete</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Leave Request - April</td>
-                    <td>2023-03-28</td>
-                    <td>Pending</td>
-                    <td class="actions">
-                        <button>View</button>
-                        <button>Edit</button>
-                        <button>Delete</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Ethics Declaration Form</td>
-                    <td>2023-03-20</td>
-                    <td>Approved</td>
-                    <td class="actions">
-                        <button>View</button>
-                        <button>Edit</button>
-                        <button>Delete</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Final Year 1 Sign-Off (Form 10-A1)</td>
-                    <td>2023-04-10</td>
-                    <td>Pending</td>
-                    <td class="actions">
-                        <button>View</button>
-                        <button>Edit</button>
-                        <button>Delete</button>
-                    </td>
-                </tr>
-            </tbody>
+            <tr>
+                <th>Submission Title</th>
+                <th>Date Submitted</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+            <tr>
+                <td>General Medicine Rotation Log</td>
+                <td>2023-01-15</td>
+                <td>Pending</td>
+                <td class="actions">
+                    <button>View</button>
+                    <button>Edit</button>
+                    <button>Delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Form 139 - Paediatrics Evaluation</td>
+                <td>2023-02-10</td>
+                <td>Approved</td>
+                <td class="actions">
+                    <button>View</button>
+                    <button>Edit</button>
+                    <button>Delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Leave Request - April</td>
+                <td>2023-03-05</td>
+                <td>Pending</td>
+                <td class="actions">
+                    <button>View</button>
+                    <button>Edit</button>
+                    <button>Delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Ethics Declaration Form</td>
+                <td>2023-04-20</td>
+                <td>Approved</td>
+                <td class="actions">
+                    <button>View</button>
+                    <button>Edit</button>
+                    <button>Delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Final Year 1 Sign-Off (Form 10-A1)</td>
+                <td>2023-05-15</td>
+                <td>Pending</td>
+                <td class="actions">
+                    <button>View</button>
+                    <button>Edit</button>
+                    <button>Delete</button>
+                </td>
+            </tr>
         </table>
+        
     </div>
 </body>
 </html>
