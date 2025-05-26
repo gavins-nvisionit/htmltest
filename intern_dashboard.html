@@ -1,85 +1,105 @@
 
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Intern Dashboard</title>
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-                margin: 0;
-                padding: 0;
-                background-color: #f4f4f4;
-            }
-            header {
-                background-color: #4CAF50;
-                color: white;
-                padding: 10px 0;
-                text-align: center;
-            }
-            nav {
-                display: flex;
-                justify-content: center;
-                background-color: #333;
-            }
-            nav a {
-                color: white;
-                padding: 14px 20px;
-                text-decoration: none;
-                text-align: center;
-            }
-            nav a:hover {
-                background-color: #ddd;
-                color: black;
-            }
-            .container {
-                padding: 20px;
-            }
-            .card {
-                background-color: white;
-                padding: 20px;
-                margin: 20px 0;
-                border-radius: 5px;
-                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            }
-            .card h2 {
-                margin-top: 0;
-            }
-            footer {
-                background-color: #333;
-                color: white;
-                text-align: center;
-                padding: 10px 0;
-                position: fixed;
-                width: 100%;
-                bottom: 0;
-            }
-        </style>
-    </head>
-    <body>
-        <header>
-            <h1>Intern Dashboard</h1>
-        </header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="intern_dashboard.html">Intern Dashboard</a>
-            <a href="supervisor_dashboard.html">Supervisor Dashboard</a>
-            <a href="logbook_entry.html">Logbook Entry</a>
-            <a href="evaluation_form.html">Evaluation Form</a>
-            <a href="notifications.html">Notifications</a>
-            <a href="reports.html">Reports</a>
-            <a href="admin_panel.html">Admin Panel</a>
-        </nav>
-        <div class="container">
-            <div class="card">
-                <h2>Intern Dashboard</h2>
-                <p>This is the Intern Dashboard page. Content goes here.</p>
-            </div>
-        </div>
-        <footer>
-            <p>&copy; 2024 Health Professions Council of South Africa (HPCSA)</p>
-        </footer>
-    </body>
-    </html>
-    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intern Dashboard - Electronic Medical Intern E-Logbook</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 1rem;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            padding: 2rem;
+        }
+        .logo {
+            display: block;
+            margin: 0 auto;
+            width: 150px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 2rem;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 1rem;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://www.hpcsa.co.za/Content/Images/logo.png" alt="HPCSA Logo" class="logo">
+        <h1>Electronic Medical Intern E-Logbook</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="intern_dashboard.html">Intern Dashboard</a>
+        <a href="supervisor_dashboard.html">Supervisor Dashboard</a>
+        <a href="logbook_entry.html">Logbook Entry</a>
+        <a href="evaluation_form.html">Evaluation Form</a>
+        <a href="notifications.html">Notifications</a>
+        <a href="reports.html">Reports</a>
+        <a href="admin_panel.html">Admin Panel</a>
+    </nav>
+    <div class="container">
+        <h2>Intern Dashboard</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>My Submissions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>General Medicine Rotation Log</td>
+                </tr>
+                <tr>
+                    <td>Form 139 - Paediatrics Evaluation</td>
+                </tr>
+                <tr>
+                    <td>Leave Request - April</td>
+                </tr>
+                <tr>
+                    <td>Ethics Declaration Form</td>
+                </tr>
+                <tr>
+                    <td>Final Year 1 Sign-Off (Form 10-A1)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
