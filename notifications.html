@@ -1,11 +1,12 @@
 
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Notifications</title>
-    <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Notifications</title>
+<style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -63,21 +64,29 @@
     </style>
 </head>
 <body>
-    <header>
-        <img src="logo2.jpg" alt="HPCSA Logo" class="logo">
-        <h1>Notifications</h1>
-    </header>
-    <nav>
-        <a href="intern_dashboard.html">Intern Dashboard</a>
-        <a href="supervisor_dashboard.html">Supervisor Dashboard</a>
-        <a href="logbook_entry.html">Logbook Entry</a>
-        <a href="evaluation_form.html">Evaluation Form</a>
-        <a href="notifications.html">Notifications</a>
-        <a href="reports.html">Reports</a>
-        <a href="admin_panel.html">Admin Panel</a>
-    </nav>
-    <div class="container">
-        <h2>Notifications</h2><p>Content for notifications goes here.</p>
-    </div>
-</body>
+<header>
+<img alt="HPCSA Logo" class="logo" src="logo2.jpg"/>
+<h1>Notifications</h1>
+</header>
+<nav>
+<a href="intern_dashboard.html">Intern Dashboard</a>
+<a href="supervisor_dashboard.html">Supervisor Dashboard</a>
+<a href="logbook_entry.html">Logbook Entry</a>
+<a href="evaluation_form.html">Evaluation Form</a>
+<a href="notifications.html">Notifications</a>
+<a href="reports.html">Reports</a>
+<a href="admin_panel.html">Admin Panel</a>
+</nav>
+<div class="container">
+<h2>Notifications</h2><p>Content for notifications goes here.</p>
+<table border="1" style="width:100%"><thead><tr><th>ID</th><th>Message</th><th>Date</th><th>Actions</th></tr></thead><tbody><tr><td>1</td><td>Notification 1</td><td>2023-01-01</td><td><button onclick="approveNotification(this)">Approve</button><button onclick="rejectNotification(this)">Reject</button></td></tr><tr><td>2</td><td>Notification 2</td><td>2023-01-02</td><td><button onclick="approveNotification(this)">Approve</button><button onclick="rejectNotification(this)">Reject</button></td></tr><tr><td>3</td><td>Notification 3</td><td>2023-01-03</td><td><button onclick="approveNotification(this)">Approve</button><button onclick="rejectNotification(this)">Reject</button></td></tr></tbody></table></div>
+<script>
+function approveNotification(button) {
+    alert('Notification approved!');
+}
+
+function rejectNotification(button) {
+    alert('Notification rejected!');
+}
+</script></body>
 </html>
