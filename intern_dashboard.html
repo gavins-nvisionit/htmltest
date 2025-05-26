@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Intern Dashboard - Electronic Medical Intern E-Logbook</title>
+    <title>Intern Dashboard</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -57,6 +57,17 @@
             background-color: #4CAF50;
             color: white;
         }
+        .actions button {
+            padding: 0.5rem 1rem;
+            margin-right: 0.5rem;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+        .actions button:hover {
+            background-color: #45a049;
+        }
     </style>
 </head>
 <body>
@@ -65,7 +76,6 @@
         <h1>Electronic Medical Intern E-Logbook</h1>
     </header>
     <nav>
-        <a href="index.html">Home</a>
         <a href="intern_dashboard.html">Intern Dashboard</a>
         <a href="supervisor_dashboard.html">Supervisor Dashboard</a>
         <a href="logbook_entry.html">Logbook Entry</a>
@@ -75,28 +85,69 @@
         <a href="admin_panel.html">Admin Panel</a>
     </nav>
     <div class="container">
-        <h2>Intern Dashboard</h2>
+        <h2>Welcome to the Electronic Medical Intern E-Logbook System</h2>
+        <p>Select a section from the navigation bar to get started.</p>
+        
+        <h3>My Submissions</h3>
         <table>
             <thead>
                 <tr>
-                    <th>My Submissions</th>
+                    <th>Submission Title</th>
+                    <th>Date Submitted</th>
+                    <th>Status</th>
+                    <th>Actions</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td>General Medicine Rotation Log</td>
+                    <td>2023-04-01</td>
+                    <td>Pending</td>
+                    <td class="actions">
+                        <button>View</button>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                    </td>
                 </tr>
                 <tr>
                     <td>Form 139 - Paediatrics Evaluation</td>
+                    <td>2023-04-15</td>
+                    <td>Approved</td>
+                    <td class="actions">
+                        <button>View</button>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                    </td>
                 </tr>
                 <tr>
                     <td>Leave Request - April</td>
+                    <td>2023-03-28</td>
+                    <td>Pending</td>
+                    <td class="actions">
+                        <button>View</button>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                    </td>
                 </tr>
                 <tr>
                     <td>Ethics Declaration Form</td>
+                    <td>2023-03-20</td>
+                    <td>Approved</td>
+                    <td class="actions">
+                        <button>View</button>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                    </td>
                 </tr>
                 <tr>
                     <td>Final Year 1 Sign-Off (Form 10-A1)</td>
+                    <td>2023-04-10</td>
+                    <td>Pending</td>
+                    <td class="actions">
+                        <button>View</button>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                    </td>
                 </tr>
             </tbody>
         </table>
